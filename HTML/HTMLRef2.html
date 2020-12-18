@@ -10,7 +10,7 @@
 		<h1>Second page for testing</h1>
 		<form>
 			<label for="username">Name</label>
-			<input type="text" name="nameField" id="username">
+			<input type="text" name="nameField" id="username" minlength="6" maxlength="15" required>
 			<label for="pw">Password</label>
 			<input type="password" name="passField" id="pw">
 			<br><br>
@@ -30,6 +30,9 @@
 			<br>
 			<label for="Radiobox2">Radiobox2</label>
 			<input id="Radiobox2" type="radio" name="radiobox" value="radiochecked2">
+			<br><br>
+			<label for="regextest">Regextest</label>
+			<input id="regextest" type="text" name="regexval" pattern="[0-9]{14,16}" required>
 			<hr>
 			<section class="Dropdown-section">
 				<label for="dropdown">Choices</label>
@@ -42,14 +45,23 @@
 			<hr>
 			<section class="list-selection">
 				<label for="list-question">Why are you here?</label>
-				<input list="list-questions" id="list-question" name="list">
+				<input type="text" list="list-questions" id="list-question" name="list">
 				<datalist id="list-questions">
 					<option value="1">Because I want to be</option>
 					<option value="2">Because I can</option>
 					<option value="3">Don't question me</option>
 				</datalist>
 			</section>
-
+			<hr>
+			<section class="textarea-box">
+				<strong><label for="textbox">Text box</label></strong>
+				<br>
+				<textarea id="textbox" type="text" rows="5" cols="60" name="textboxinput" required></textarea>
+			</section>
+			<hr>
+			<section class="submission">
+				<strong><input type="submit" value="Submit"></strong>
+			</section>
 		</form>
 	</body>
 </html>
