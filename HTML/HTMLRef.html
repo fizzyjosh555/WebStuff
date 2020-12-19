@@ -8,16 +8,15 @@
 	<body>
 		<h1> Josh's test page </h1>
 		<p> 
-			<em>Josh</em> 
-			<strong>is</strong> 
-			great 
+			<em>&ltem&gt</em> 
+			<strong>&ltstrong&gt</strong> 
 		</p>
 		<div id="Joshisgreat">
-			<h2> Reasons why Josh is great </h2>
+			<h2> Header tag </h2>
 			<ol>
-				<li>He is Josh</li>
-				<li>He is Josh</li>
-				<li>He is Josh</li>
+				<li>Reguar &ltli&gt tag</li>
+				<li>Reguar &ltli&gt tag</li>
+				<li>Reguar &ltli&gt tag</li>
 			</ol>
 		</div>
 		<div id="CuteDog">
@@ -27,19 +26,17 @@
 			</a>
 		</div>
 		<div id="CuteVideo">
-			<h2> Now look at this cute video </h2>
+			<h2> Look at this cute video </h2>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/X2lIovmNsUY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div>
 			<a href="https://www.google.com/" target="_blank">Click here for a surprise</a>
-			<a href="./HTMLRef.html">Josh's Loop</a>
+			<br>
 			<a href="./HTMLRef2.html">HTMLRef2</a>
 		</div>
 		<br><br>
 		<div>
-			<a href="#bottom">Bottom</a>
-			<br>
-			<a id="bottom" href="#Joshisgreat">Top</a>
+			<a href="#bottom">Takes you to location on page based on id</a>
 		</div>
 		<div>
 			<table>
@@ -77,8 +74,26 @@
 				</tfoot>
 			</table>
 		</div>
-		<form>
-			<input type="text" name="nameField">
-		</form>
+		<footer>
+			<article>
+				<section>
+					<p>This is an article tag. It typically contains information about a topic that is distinct from another.</p>
+					<p>With an article tag, it can contain a &ltsection&gt tag for better organization.</p>
+				</section>
+				<aside>
+					<p>This is an &ltaside&gt tag. It typically contains supporting information for the preceding information.</p>
+				</aside>
+				<figure>
+					<img width="350" height="400" src="https://external-preview.redd.it/bX_06I5_gMuTjFyHbRnACKdAAT8v9SPk2myTleX4G3w.jpg?auto=webp&s=531185efac7916afb6f7bd3767a4c611d2ee738e">
+					<figcaption>This is a &ltfigcaption&gt tag. It's different from a regular &ltp&gt tag in that a figcaption follows the img inside the figure tag.</figcaption>
+				</figure>
+			</article>
+			<article id="bottom">
+				<video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls>Unable to load</video>
+				<!-- embed is deprecated; use video for HTML5 -->
+				<br>
+				<embed src="https://media.giphy.com/media/nXUCkgH6BmigU/giphy.gif">
+			</article>
+		</footer>
 	</body>
 </html>

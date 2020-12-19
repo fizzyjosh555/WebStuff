@@ -6,62 +6,68 @@
 		<title>The Legend's Second Page</title>
 	</head>
 	<body>
-		<a href="./HTMLRef.html">Back</a>
-		<h1>Second page for testing</h1>
-		<form>
-			<label for="username">Name</label>
-			<input type="text" name="nameField" id="username" minlength="6" maxlength="15" required>
-			<label for="pw">Password</label>
-			<input type="password" name="passField" id="pw">
-			<br><br>
-			<label for="numField">Number</label>
-			<input type="number" name="numField" id="numField" step="1" min="0" max="100">
-			<br><br>
-			<label for="Slider">Slider</label>
-			<input type="range" name="numSlider" id="Slider" step=".05" min="0" max="10">
-			<br><br>
-			<label for="Checkbox">Checkbox</label>
-			<input id="Checkbox" type="checkbox" name="check" value="checked">
-			<label for="Checkbox2">Checkbox2</label>
-			<input id="Checkbox2" type="checkbox" name="check" value="checked2">
-			<br><br>
-			<label for="Radiobox">Radiobox</label>
-			<input id="Radiobox" type="radio" name="radiobox" value="radiochecked">
-			<br>
-			<label for="Radiobox2">Radiobox2</label>
-			<input id="Radiobox2" type="radio" name="radiobox" value="radiochecked2">
-			<br><br>
-			<label for="regextest">Regextest</label>
-			<input id="regextest" type="text" name="regexval" pattern="[0-9]{14,16}" required>
-			<hr>
-			<section class="Dropdown-section">
-				<label for="dropdown">Choices</label>
-				<select id="dropdown" name="Dropdownchoice">
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-				</select>
-			</section>
-			<hr>
-			<section class="list-selection">
-				<label for="list-question">Why are you here?</label>
-				<input type="text" list="list-questions" id="list-question" name="list">
-				<datalist id="list-questions">
-					<option value="1">Because I want to be</option>
-					<option value="2">Because I can</option>
-					<option value="3">Don't question me</option>
-				</datalist>
-			</section>
-			<hr>
-			<section class="textarea-box">
-				<strong><label for="textbox">Text box</label></strong>
+		<header>
+			<nav>
+				<a href="./HTMLRef.html">Back</a>
+			</nav>
+		</header>
+		<main>
+			<h1>Second page for testing</h1>
+			<form>
+				<label for="username">Name</label>
+				<input type="text" name="nameField" id="username" minlength="6" maxlength="15" required>
+				<label for="pw">Password</label>
+				<input type="password" name="passField" id="pw">
+				<br><br>
+				<label for="numField">Number</label>
+				<input type="number" name="numField" id="numField" step="1" min="0" max="100">
+				<br><br>
+				<label for="Slider">Slider</label>
+				<input type="range" name="numSlider" id="Slider" step=".05" min="0" max="10">
+				<br><br>
+				<label for="Checkbox">Checkbox</label>
+				<input id="Checkbox" type="checkbox" name="check" value="checked">
+				<label for="Checkbox2">Checkbox2</label>
+				<input id="Checkbox2" type="checkbox" name="check" value="checked2">
+				<br><br>
+				<label for="Radiobox">Radiobox</label>
+				<input id="Radiobox" type="radio" name="radiobox" value="radiochecked">
 				<br>
-				<textarea id="textbox" type="text" rows="5" cols="60" name="textboxinput" required></textarea>
-			</section>
-			<hr>
-			<section class="submission">
-				<strong><input type="submit" value="Submit"></strong>
-			</section>
-		</form>
+				<label for="Radiobox2">Radiobox2</label>
+				<input id="Radiobox2" type="radio" name="radiobox" value="radiochecked2">
+				<br><br>
+				<label for="regextest">Regextest</label>
+				<input id="regextest" type="text" name="regexval" pattern="[0-9]{14,16}" required>
+				<hr>
+				<section class="Dropdown-section">
+					<label for="dropdown">Choices</label>
+					<select id="dropdown" name="Dropdownchoice">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</section>
+				<hr>
+				<section class="list-selection">
+					<label for="list-question">Why are you here?</label>
+					<input type="text" list="list-questions" id="list-question" name="list">
+					<datalist id="list-questions">
+						<option value="1">Because I want to be</option>
+						<option value="2">Because I can</option>
+						<option value="3">Don't question me</option>
+					</datalist>
+				</section>
+				<hr>
+				<section class="textarea-box">
+					<strong><label for="textbox">Text box</label></strong>
+					<br>
+					<textarea id="textbox" type="text" rows="5" cols="60" name="textboxinput" required></textarea>
+				</section>
+				<hr>
+				<section class="submission">
+					<strong><input type="submit" value="Submit"></strong>
+				</section>
+			</form>
+		</main>
 	</body>
 </html>
