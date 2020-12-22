@@ -12,7 +12,7 @@ h1{
 p.chainClass{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: sandybrown;
-    /*color: brown !important; The important property overrides all other more specific attributes, which is obviously bad practice. Try not to use this*/
+    /*color: brown !important; The important property overrides all more specific attributes, which is obviously bad practice. Try not to use this*/
 }
 
 .chainClass a{
@@ -50,4 +50,43 @@ p.chainClass{
     background-position: center;
     background-repeat: repeat;
     height: 250px;
+    min-height: 250px;
+    min-width: 1900px;
+    overflow: scroll;
 }
+
+/*
+The greater vertical margin is taken, whereas horizontal margins are added
+
+*/
+#boxTest{
+    box-sizing: border-box;
+    margin: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 3px solid coral;
+    border-radius: 50%;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    height: 200px;
+    width: 300px;
+    min-height: 200px;
+    min-width: 300px;
+    text-align: center;
+}
+
+/*
+To reset default values for user agent stylesheets, use the code below:
+*{
+    margin: 0;
+    padding: 0;
+}
+
+The asterisk (universal selector) means all HTML elements
+
+*/
