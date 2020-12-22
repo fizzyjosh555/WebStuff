@@ -1,0 +1,53 @@
+/*
+h1 is the CSS selector
+font-family is a CSS property
+'Franklin ... is the associated property value
+the property and value together is a CSS declaration
+entire snippet is referred to as a CSS rule
+*/
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p.chainClass{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: sandybrown;
+    /*color: brown !important; The important property overrides all other more specific attributes, which is obviously bad practice. Try not to use this*/
+}
+
+.chainClass a{
+    color: red;
+}
+/* Rule for class name */
+.pClass1{
+    color: aqua;
+}
+
+.fontClass{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.colorClass{
+    color: darkblue;
+}
+
+/* Rule for ID; unlike a class, IDs are meant to style only one element */
+#uppercase{
+    text-transform: uppercase;
+}
+
+.coolStuff{
+    font-family: Georgia;
+    font-size: 20px;
+    text-align: center;
+    background-color: pink;
+    opacity: .7;
+}
+
+.imageStuff{
+    background-image: url("https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg");
+    background-size: 20%;
+    background-position: center;
+    background-repeat: repeat;
+    height: 250px;
+}
