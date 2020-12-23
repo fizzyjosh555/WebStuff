@@ -80,7 +80,22 @@ The greater vertical margin is taken, whereas horizontal margins are added
     text-align: center;
 }
 
+#positionTest div.boxClass{
+    background-color: rgb(187, 132, 30);
+    border: 10px solid blue;
+    padding: 5px;
+    margin: 10px 0;
+    width: 100px;
+    height: 75px;
+    position: relative;
+}
+
+
 /*
+---------------------------
+---------Other info--------
+---------------------------
+
 To reset default values for user agent stylesheets, use the code below:
 *{
     margin: 0;
@@ -88,5 +103,22 @@ To reset default values for user agent stylesheets, use the code below:
 }
 
 The asterisk (universal selector) means all HTML elements
+
+Other properties reference:
+display: inline, block, inline-block
+position: static, relative, absolute, fixed
+z-index: any integer
+float: left, right
+clear: left, right, both, none
+hsl(359, 100%, 100%) or hsla(359, 100%, 100%, 1.0)
+font-family: typeface
+font-weight: num or word
+word-spacing: .25em (default value)
+letter-spacing: .25em
+text-transform: uppercase lowercase
+text-align: left center right
+line-height: 1.0 or 1px (absolute val or line height is ratio of font size vs pixels)
+font-family: "Arial", "Times New Roman", serif/sans-serif (backup font method)
+@font-face rule allows custom fonts to be imported from both remote/local servers
 
 */
