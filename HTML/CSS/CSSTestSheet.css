@@ -1,0 +1,141 @@
+/*
+h1 is the CSS selector
+font-family is a CSS property
+'Franklin ... is the associated property value
+the property and value together is a CSS declaration
+entire snippet is referred to as a CSS rule
+*/
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p.chainClass{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: sandybrown;
+    /*color: brown !important; The important property overrides all more specific attributes, which is obviously bad practice. Try not to use this*/
+}
+
+.chainClass a{
+    color: red;
+}
+/* Rule for class name */
+.pClass1{
+    color: aqua;
+}
+
+.fontClass{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.colorClass{
+    color: darkblue;
+}
+
+/* Rule for ID; unlike a class, IDs are meant to style only one element */
+#uppercase{
+    text-transform: uppercase;
+}
+
+.coolStuff{
+    font-family: Georgia;
+    font-size: 20px;
+    text-align: center;
+    background-color: pink;
+    opacity: .7;
+}
+
+.imageStuff{
+    background-image: url("https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg");
+    background-size: 20%;
+    background-position: center;
+    background-repeat: repeat;
+    height: 250px;
+    min-height: 250px;
+    min-width: 1900px;
+    overflow: scroll;
+}
+
+/*
+The greater vertical margin is taken, whereas horizontal margins are added
+
+*/
+#boxTest{
+    box-sizing: border-box;
+    margin: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 3px solid coral;
+    border-radius: 50%;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    height: 200px;
+    width: 300px;
+    min-height: 200px;
+    min-width: 300px;
+    text-align: center;
+}
+
+#positionTest div.boxClass{
+    background-color: rgb(187, 132, 30);
+    border: 10px solid blue;
+    padding: 5px;
+    margin: 10px 0;
+    width: 100px;
+    height: 75px;
+    position: relative;
+}
+
+.container{
+    height: 250px;
+    width: 200px;
+    display: flex;
+}
+
+.box{
+    background-color: rgb(187, 132, 30);
+    border: 3px solid red;
+    width: 100px;
+    height: 75px;
+}
+
+#flextest{
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/*
+---------------------------
+---------Other info--------
+---------------------------
+
+To reset default values for user agent stylesheets, use the code below:
+*{
+    margin: 0;
+    padding: 0;
+}
+
+The asterisk (universal selector) means all HTML elements
+
+Other properties reference:
+display: inline, block, inline-block
+position: static, relative, absolute, fixed
+z-index: any integer
+float: left, right
+clear: left, right, both, none
+hsl(359, 100%, 100%) or hsla(359, 100%, 100%, 1.0)
+font-family: typeface
+font-weight: num or word
+word-spacing: .25em (default value)
+letter-spacing: .25em
+text-transform: uppercase lowercase
+text-align: left center right
+line-height: 1.0 or 1px (absolute val or line height is ratio of font size vs pixels)
+font-family: "Arial", "Times New Roman", serif/sans-serif (backup font method)
+@font-face rule allows custom fonts to be imported from both remote/local servers
+
+*/
