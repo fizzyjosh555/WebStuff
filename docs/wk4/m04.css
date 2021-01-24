@@ -1,0 +1,82 @@
+* {
+    font-family: 'NeomatrixCodeRegular';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+
+body {
+    background-image: url('bgimg.jpg');
+    background-size: cover;
+}
+
+h1 {
+    color: orange;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#content {
+    overflow: auto;
+}
+
+#nav, #feature, #footer {
+    margin: 1%;
+}
+
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+}
+
+.column3 {
+    margin-right: 0%;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+#nav, #footer {
+    color: white;
+    background-color: #b45ba5;
+    padding: 0.5em 0;
+}
+
+a{
+    color: white;
+}
+
+#footer {
+    background-color: #5baeb4 !important;
+}
+
+#feature, .article {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #8cc63e;
+}
+
+#feature {
+    background-image: url("flower.png");
+    background-size:contain;
+    background-position: right;
+    background-repeat:no-repeat;
+}
+
+.column1 {
+    background-color: #e383a8;
+}
+
+.column2 {
+    background-color: #900c3e;
+}
+
+.column3 {
+    background-color: #c77a87;
+}
