@@ -16,6 +16,7 @@ function validateForm(){
     let validZipCode = false;
 
     let letters = /^[A-Za-z]+$/;
+    let errorMessages = "";
 
     //Step 2: Grab inputs
     let fname = document.getElementById("firstname").value;
