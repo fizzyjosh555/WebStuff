@@ -56,7 +56,7 @@ function validateForm(){
     else validEmail = true;
 
     //Phone
-    if (isNaN(phone) || phone.lenght >15 || phone===null || phone==="")
+    if (isNaN(phone) || phone.length >15 || phone===null || phone==="")
         errorMessages += "<p>The phone number is required, it must be a number, and it cannot be greater than 15 characters.</p>";
     else validPhone = true;
 
