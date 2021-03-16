@@ -31,18 +31,17 @@
   </header>
 
 <div class="w3-row-padding" style="margin-bottom:128px">
-    <form action="thankyou.html" method="get" name="myContact">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name..">
-
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Email...">
-
-    <label for="comment">Comment</label>
-    <textarea id="comment" name="comment" placeholder="Your comment..." style="height: 200px"></textarea>
-
-    <input type="submit" value="Submit">
+    <div id="errorMessages"></div>
+    <form action="thankyou.html" method="get" name="myContact" onsubmit="return validateForm()">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Email...">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your message..." style="height: 200px"></textarea>
+      <input type="submit" value="Submit">
     </form>
+    <script src="contact.js"></script>
 </div>
   
 <!-- End Page Content -->
