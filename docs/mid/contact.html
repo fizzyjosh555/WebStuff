@@ -32,7 +32,7 @@
 
 <div class="w3-row-padding" style="margin-bottom:128px">
     <div id="errorMessages"></div>
-    <form action="thankyou.html" method="get" name="myContact" onsubmit="return validateForm()">
+    <form action="thankyou.html" method="get" name="myContact" onsubmit="return validateForm();">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" placeholder="Your name..">
       <label for="email">Email</label>
@@ -41,11 +41,10 @@
       <textarea id="message" name="message" placeholder="Your message..." style="height: 200px"></textarea>
       <input type="submit" value="Submit">
     </form>
-    <script src="contact.js"></script>
 </div>
   
 <!-- End Page Content -->
 </div>
-
+<script src="contact.js"></script>
 </body>
 </html>
